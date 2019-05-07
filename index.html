@@ -25,8 +25,8 @@
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
 				camera.position.z = 400;
 				scene = new THREE.Scene();
-				var texture = new THREE.TextureLoader().load( 'images/crate.gif' );
-				var geometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
+				var texture = new THREE.TextureLoader().load( 'images/smiley.png' );
+				var geometry = new THREE.SphereBufferGeometry( 100, 32, 32 );
 				var material = new THREE.MeshBasicMaterial( { map: texture } );
 				mesh = new THREE.Mesh( geometry, material );
 				scene.add( mesh );
